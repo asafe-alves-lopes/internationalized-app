@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Internationalized App</string>
+    <string name="welcome_message">Olá mundo!</string>
 </resources>
