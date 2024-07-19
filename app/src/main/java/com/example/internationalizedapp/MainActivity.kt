@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
@@ -32,9 +33,15 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun ShowMessage(message: String) {
     Box(
-        contentAlignment = Alignment.Center, modifier = Modifier.fillMaxSize()
+        contentAlignment = Alignment.Center, modifier = Modifier
+            .fillMaxSize()
+            .background(color = MaterialTheme.colorScheme.background),
     ) {
-        Text(text = message, style = MaterialTheme.typography.titleLarge)
+        Text(
+            text = message,
+            style = MaterialTheme.typography.titleLarge,
+            color = MaterialTheme.colorScheme.secondary
+        )
     }
 }
 
