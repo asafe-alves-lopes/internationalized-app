@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Internationalized App</string>
-    <string name="welcome_message">Olá mundo!</string>
+    <string name="app_name" translatable="false">Internationalized App</string>
+    <string name="welcome_message">Hello world!</string>
 </resources>
